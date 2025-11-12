@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../public/imgs/logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- Css Style -->
+    <link href="../dist/output.css" rel="stylesheet" />
+
+    <!-- Fontawesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- JavaScript file -->
+    <script defer src="../js/search.js"></script>
+    <script defer src="../js/header.js"></script>
+    <script defer src="../js/footer.js"></script>
+    <script defer src="../js/pagination.js"></script>
+    <script defer src="../js/home.js"></script>
+    <script defer src="../js/details.js"></script>
+
+    <title>Let's Movies</title>
+  </head>
+  <body class="series-page">
+    <section class="">
+      <!-- Layer for search section -->
+      <div class="search-layer hidden inset-0 absolute bg-black/60 z-5"></div>
+
+      <!-- layer for beauty of landing background -->
+      <div class="layer"></div>
+
+      <!-- Header -->
+      <div id="header"></div>
+
+      <!-- Landing -->
+
+      <div
+        id="landing"
+        class="h-screen bg-[url('/public/imgs/landing__series_mobile.jpg')] md:bg-[url('/public/imgs/landing__series.jpg')] bg-cover bg-center bg-no-repea pt-24 overflow-hidden"
+      >
+        <div class="layer"></div>
+
+        <div
+          class="px-3 sm:px-9flex flex-col bottom-8 lg:top-1/2 lg:-translate-y-1/2 gap-8 absolute lg:w-[40%] items-center text-center lg:text-start lg:items-start"
+        >
+          <h1 class="main-title">Monsters, INC.</h1>
+          <p class="text-cream-primary">
+            Animated film that explores the world of Monstropolis, where
+            monsters generate their city's power by scaring children at night.
+          </p>
+          <button
+            id="watch-now"
+            class="mt-8 font-semibold relative overflow-hidden text-lg rounded-full p-2 bg-cream-primary w-1/2 before:absolute before:inset-0 before:bg-black/30 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300"
+          >
+            Watch Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <a href="./detailsPage.html"></a>
+    <main class="bg-main-bg text-cream-primary p-6 sm:p-20">
+      <h1 class="text-3xl font-bold text-center mb-20 text-cream-primary">
+        Series Section
+      </h1>
+      <div
+        class="series-container grid gap-6 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 justify-items-center"
+      >
+        <!-- Movie Card -->
+      </div>
+
+      <!-- pagination -->
+      <div id="pagination"></div>
+    </main>
+    <!-- Footer -->
+    <div id="footer"></div>
+  </body>
+</html>

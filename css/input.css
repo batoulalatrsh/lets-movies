@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@theme {
+  --font-GreatVibes: GreatVibes, "sans-serif";
+  --color-cream-primary: #fbfbf2;
+  --color-primary: #ffc300;
+  --color-main-bg: #181d25;
+  --color-movie: #12161c;
+  --color-footer: #1c1c1c;
+  --color-primary: #36d1dc;
+  --color-secondary: #5b86e5;
+  --color-icons: #00b5c7;
+}
+
+@layer components {
+  .main-title {
+    @apply font-bold text-4xl sm:text-6xl text-[#fbfbf2] leading-tight;
+  }
+  .nav-link {
+    @apply block px-4 py-2 transition-all duration-300 hover:shadow-sm sm:hover:text-primary sm:hover:shadow-none;
+  }
+  .movie-genere {
+    @apply inline-block size-3 rounded-full bg-linear-to-r from-primary to-secondary to-100% mr-2;
+  }
+  .active {
+    @apply border-b-2 border-icons text-icons transition-all duration-200;
+  }
+  .layer {
+    @apply inset-0 absolute bg-black/30;
+  }
+  .hover {
+    @apply hover:text-icons transition-all duration-300;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

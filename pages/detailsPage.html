@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../public/imgs/logo.png"
+      type="image/x-icon"
+    />
+
+    <!-- Css Style -->
+    <link href="../dist/output.css" rel="stylesheet" />
+
+    <!-- Fontawesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
+    <!-- JavaScript file -->
+    <script defer src="../js/search.js"></script>
+    <script defer src="../js/header.js"></script>
+    <script defer src="../js/footer.js"></script>
+    <script defer src="../js/details.js"></script>
+
+    <title>Let's Movies</title>
+  </head>
+
+  <!--  <div class="layer absolute inset-0 bg-black/35"></div> -->
+  <body class="detail-page">
+    <section class="">
+      <!-- Layer for search section -->
+      <div class="search-layer hidden inset-0 absolute bg-black/60 z-15"></div>
+
+      <!-- Header -->
+      <header id="header"></header>
+
+      <!-- Landing -->
+      <main class="movie-detail"></main>
+    </section>
+
+    <!-- Movies section-->
+    <main class="bg-main-bg text-cream-primary p-6 sm:p-20">
+      <h1 class="text-3xl font-bold text-center mb-20 text-cream-primary">
+        Recommendations
+      </h1>
+
+      <div
+        class="recommendations-container grid gap-6 grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 justify-items-center"
+      >
+        <!-- Movie Card -->
+         
+      </div>
+      <!-- pagination -->
+      <div id="pagination"></div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer"></footer>
+  </body>
+</html>
