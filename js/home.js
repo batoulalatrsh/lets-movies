@@ -55,7 +55,7 @@ const viewItems = function (type) {
       ? "https://image.tmdb.org/t/p/w500" + mov.poster_path
       : "../public/imgs/notfound.jpg";
     const html = `
-    <a href="../pages/detailsPage.html#movie-${mov.id}" class="movie-card">
+    <a href="../pages/detailsPage.html#${type}-${mov.id}" class="movie-card">
       <div class="bg-movie w-[160px] sm:w-[200px] rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-cream-primary/40 transition-all duration-300">
         <div class="relative">
             <img
